@@ -65,7 +65,12 @@ function pg1func(op){
 
     var enviar = document.getElementById("enviar");
     enviar.style = "position: absolute;cursor: pointer;top: 437px;left: 200px;height: 35px;background: transparent;width: 109px;border-radius: 2%;border: 1px solid transparent;";
-    enviar.onclick= function(){APICall(3); document.getElementById("contact_form").submit(); contact_info.name= name.value; contact_info.phone=phone.value;};
+    enviar.onclick= function(){APICall(3);
+                            document.getElementById("contact_form").submit();
+                            contact_info.name= name.value;
+                            contact_info.phone=phone.value;
+                            document.getElementById("message").innerHTML = "Obrigado! Entraremos em contato em breve"
+                            };
 
     var privacy_policy = document.getElementById("privacy_policy");
     privacy_policy.style = "position: absolute;top: 412px;left: 37px;height: 15px;background: transparent;width: 262px;border-radius: 2%;border: 1px solid transparent;";
